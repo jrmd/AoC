@@ -38,7 +38,7 @@ func TestPart2(t *testing.T) {
 
 	result := PartTwo(data)
 
-	if result != 0 {
-		t.Fatalf("Expected 0, got %d", result)
+	if result != 46 {
+		t.Fatalf("Expected 46, got %d", result)
 	}
 }

@@ -97,7 +97,22 @@ func PartOne(almanac *Almanac) int {
 }
 
 func PartTwo(almanac *Almanac) int {
-	return 0
+	loc := -1
+
+	for i := 0; i < len(almanac.Seeds); i += 2 {
+		base := almanac.Seeds[i]
+		count := almanac.Seeds[i+1]
+
+		for j := 0; j < count; j++ {
+			newLoc := almanac.GetLocation(base + j)
+
+			if loc == -1 || newLoc < loc {
+				loc = newLoc
+			}
+		}
+	}
+
+	return loc
 }
 
 func Run() {
