@@ -13,6 +13,7 @@ import (
 	"github.com/jrmd/AoC/day_03"
 	"github.com/jrmd/AoC/day_04"
 	"github.com/jrmd/AoC/day_05"
+	"github.com/jrmd/AoC/day_06"
 
 	"github.com/urfave/cli/v2"
 )
@@ -32,6 +33,7 @@ func RunDay(ctx *cli.Context) error {
 		day_03.Run,
 		day_04.Run,
 		day_05.Run,
+		day_06.Run,
 	}
 
 	if runAll {
