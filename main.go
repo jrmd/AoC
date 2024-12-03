@@ -9,14 +9,6 @@ import (
 	"strings"
 
 	"github.com/jrmd/AoC/day_01"
-	"github.com/jrmd/AoC/day_02"
-	"github.com/jrmd/AoC/day_03"
-	"github.com/jrmd/AoC/day_04"
-	"github.com/jrmd/AoC/day_05"
-	"github.com/jrmd/AoC/day_06"
-	"github.com/jrmd/AoC/day_07"
-	"github.com/jrmd/AoC/day_08"
-	"github.com/jrmd/AoC/day_09"
 
 	"github.com/urfave/cli/v2"
 )
@@ -32,15 +24,7 @@ func RunDay(ctx *cli.Context) error {
 
 	days := []func(){
 		day_01.Run,
-		day_02.Run,
-		day_03.Run,
-		day_04.Run,
-		day_05.Run,
-		day_06.Run,
-		day_07.Run,
-		day_08.Run,
-		day_09.Run,
-	}
+  }
 
 	if runAll {
 		for i, solution := range days {
